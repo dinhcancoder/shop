@@ -175,8 +175,8 @@
     }
 
     .banner__left-btn button {
-        font-size: 1.4rem;
-        padding: 11px 22px;
+        font-size: 1.52rem;
+        padding: 12px 25px;
     }
 
     .banner__right img {
@@ -188,12 +188,7 @@
     }
 
     .mid__logo a {
-        font-size: 2.1rem;
-    }
-
-    .mid__right-tym, .mid__right-cart, .mid__right-menu {
-        width: 38px;
-        height: 38px;
+        font-size: 2.3rem;
     }
 
     .content-category {
@@ -232,7 +227,7 @@
     }
 
     .banner__left-btn button {
-        font-size: 1.4rem;
+        font-size: 1.42rem;
         padding: 11px 22px;
     }
 
