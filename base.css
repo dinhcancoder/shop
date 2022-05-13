@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+:root {
+  --primary-color: #0d6efd;
+  --white-color: white;
+  --black-color: black;
+  --text-color: #7A7A7A;
+  --text-colord: #54595F;
+  --border-color: 1px solid #ddd;
+  --box-shadow: 0 0 5px #f9f9f9;
+  --border-bottom: 1px solid #f9f9f9;
+  --hover-color: #f8f9fa;
+  --orange-color: #FFC222;
+  --background-submenu: #fff none repeat scroll 0 0;
+  --border-submenu: 1px solid rgba(0,0,0,0.04);
+  --box-shadow-submenu: 0 0px 6px rgba(0,0,0,0.05);
+}
+
+.draklight {
+  --primary-color: #0d6efd;
+  --white-color: black;
+  --black-color: white;
+  --text-color: #c2c2c2;
+  --text-colord: #DAE0D7;
+  --border-color: 1px solid #2a2a2a;
+  --box-shadow: 0 0 5px #f9f9f9;
+  --border-bottom: 1px solid #f9f9f9;
+  --hover-color: #f8f9fa;
+  --orange-color: #FFC222;
+  --border-submenu: 1px solid rgba(0,0,0,0.04);
+  --box-shadow-submenu: 0 0px 6px rgba(0,0,0,0.05);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+  position: relative;
+  font-size: 1.4rem;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+  outline: none;
+  border: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  overflow-wrap: break-word;
+}
+
+p {
+  overflow-wrap: break-word;
+}
+
+.primary {
+  color: var(--primary-color);
+}
