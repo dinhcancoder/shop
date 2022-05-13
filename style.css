@@ -17,7 +17,7 @@
 .header {
     border-bottom: var(--border-color);
     background-color: var(--white-color);
-    transition: all .7s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 
 .navbar {
@@ -109,7 +109,7 @@
 /* header center */
 .header-center {
     background-color: var(--white-color);
-    transition: background-color .7s ease-in-out;
+    transition: background-color .4s ease-in-out;
 }
 
 .mid {
@@ -340,7 +340,7 @@
 
 .header-menu {
     background-color: var(--white-color);
-    transition: background-color .7s ease-in-out;
+    transition: background-color .4s ease-in-out;
 }
 
 .menu__list {
@@ -521,7 +521,7 @@
     transform: scaleY(0);
     transform-origin: top;
     transition: transform .3s ease-in-out,
-                background-color .7s ease-in-out;
+                background-color .4s ease-in-out;
     z-index: 999;
 }
 
@@ -711,7 +711,7 @@
 
 .bn {
     background-color: var(--white-color);
-    transition: all .7s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 
 .banner {
@@ -1085,7 +1085,7 @@
     padding-top: 120px;
     padding-bottom: 40px;
     background-color: var(--white-color);
-    transition: background-color .7s ease-in-out;
+    transition: background-color .4s ease-in-out;
 }
 
 .category__header {
@@ -1118,12 +1118,14 @@
     width: 100%;
     transform: scaleY(0);
     transform-origin: top;
+    border-bottom: var(--border-color);
 }
 
 .stickys .header-center {
     transform: scaleY(1);
-    transition: transform .4s ease-in-out;
-    border-bottom: var(--border-color);
+    transition: transform .4s ease-in-out,
+                background-color .4s ease-in-out,
+                border-bottom .4s ease-in-out;
 
 }
 
@@ -1131,7 +1133,35 @@
     margin-top: 82px;
 }
 
-
 .header-center {
     z-index: 999;
 }
+
+.category__filter {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0 40px 0;
+}
+
+.category__filter ul li {
+    float: left;
+}
+
+.category__filter ul li a {
+    display: block;
+    color: var(--black-color);
+    font-size: 1.52rem;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 30px;
+    padding: 8px 32px;
+    letter-spacing: .2px;
+    cursor: pointer;
+}
+
+#filter-actice {
+    color: white;
+    background-color: var(--primary-color);
+}
+
+/* product all */

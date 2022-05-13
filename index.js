@@ -176,3 +176,16 @@ window.addEventListener('scroll', () => {
    window_header.classList.toggle('sticky', window.scrollY > 192);
    window_header.classList.toggle('stickys', window.scrollY > 200);
 })
+
+function filter(type, element) {
+    let link = document.querySelectorAll('.category__filter ul li a');
+
+    for(i = 0; i < link.length; i++) {
+        link[i].style.color = 'var(--black-color)';
+        link[i].style.backgroundColor = 'transparent';
+    }
+
+    element.style.color = 'white';
+    element.style.backgroundColor = 'var(--primary-color)';
+    element.style.transition = 'all .2s ease-in-out';
+}

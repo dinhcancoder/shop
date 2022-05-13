@@ -59,277 +59,304 @@
                 </div>
             </div>
         </div>
-    <div class="windown">
-        <!-- header center-->
-        <div class="header-center">
+        <div class="windown">
+            <!-- header center-->
+            <div class="header-center">
+                <div class="container">
+                    <div class="mid">
+                        <div class="mid__logo flex-align">
+                            <ion-icon name="ice-cream-outline"></ion-icon>
+                            <a>Web<span>Stor</span></a>
+                        </div>
+                        <div class="mid__search flex-center">
+                            <div class="mid__search-main">
+                                <input type="search" placeholder="Nhập nội dung ...">
+                                <div class="icons-search flex-center">
+                                    <ion-icon name="search-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mid__right flex-align">
+                            <div class="mid__right-tym flex-center">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </div>
+                            <div class="mid__right-cart flex-center">
+                                <ion-icon name="cart-outline"></ion-icon>
+                                <!-- <div class="display-cart">
+                                    <span>Chưa có sản phẩm nào</span>
+                                    <a href="#">Mua ngay</a>
+                                </div> -->
+                            </div>
+                            <div class="mid__right-menubox">
+                                <div class="mid__right-menu flex-center" onclick="nbmenu()">
+                                    <ion-icon name="menu-outline"></ion-icon>
+                                </div>
+                                <div class="navbar__menu">
+                                    <div class="navbar__menu-logo">
+                                        <a href="#" class="flex-align">
+                                            <ion-icon name="ice-cream-outline"></ion-icon>
+                                            <span>WebStor</span>
+                                        </a>
+                                        <ion-icon name="close-outline" onclick="nbmenu()" style="cursor: pointer;"></ion-icon>
+                                    </div>
+                                    <div class="navbar__menu-main">
+                                        <span>Danh mục</span>
+                                        <ul class="navbar__main-list">
+                                            <li onclick="displayNavbarMenu(this)" id="removeNavbar"><a ondblclick="navbarclick(this)" id="alink" href="#"><ion-icon name="home-outline"></ion-icon> Trang chủ</a></li>
+                                            <li onclick="displayNavbarMenu(this)" id="removeNavbar"><a ondblclick="navbarclick(this)" id="alink" href="#" class="navbar-actice"><ion-icon name="layers-outline"></ion-icon> Menu </a></li>
+                                            <li onclick="displayNavbarMenu(this)" id="removeNavbar">
+                                                <a ondblclick="navbarclick(this)" id="alink" href="#"><ion-icon name="fast-food-outline"></ion-icon> Đồ ăn <ion-icon name="chevron-down-outline" id="vdown"></ion-icon></a>
+                                                <ul class="navbar-submenu">
+                                                    <li><a href="#" id="navbar-links">Ăn sáng</a></li>
+                                                    <li><a href="#" id="navbar-links">Ăn trưa</a></li>
+                                                    <li><a href="#" id="navbar-links">Ăn tối</a></li>
+                                                </ul>
+                                            </li>
+                                            <li onclick="displayNavbarMenu(this)" id="removeNavbar">
+                                                <a ondblclick="navbarclick(this)" href="#" id="alink"><ion-icon name="beer-outline"></ion-icon> Đồ uống <ion-icon name="chevron-down-outline" id="vdown"></ion-icon></a>
+                                                <ul class="navbar-submenu">
+                                                    <li><a href="#" id="navbar-links">Trà sữa</a></li>
+                                                    <li><a href="#" id="navbar-links">Trà chanh</a></li>
+                                                    <li><a href="#" id="navbar-links">Trà đào</a></li>
+                                                    <li><a href="#" id="navbar-links">Soda</a></li>
+                                                </ul>
+                                            </li>
+                                            <li onclick="displayNavbarMenu(this)" id="removeNavbar"><a ondblclick="navbarclick(this)" id="alink" href="#"><ion-icon name="bookmarks-outline"></ion-icon> Khác</a></li>
+                                        </ul>
+                                        <span>Người dùng</span>
+                                        <ul class="navbar__main-list">
+                                            <li onclick="displayNavbarMenu(this)" id="removeNavbar"><a ondblclick="navbarclick(this)" id="alink" href="#"><ion-icon name="person-circle-outline"></ion-icon> Tài khoản</a></li>
+                                            <li onclick="displayNavbarMenu(this)" id="removeNavbar"><a ondblclick="navbarclick(this)" id="alink" href="#"><ion-icon name="heart-outline"></ion-icon> Yêu thích</a></li>
+                                            <li onclick="displayNavbarMenu(this)" id="removeNavbar"><a ondblclick="navbarclick(this)" id="alink" href="#"><ion-icon name="cart-outline"></ion-icon> Giỏ hàng</a></li>
+                                        </ul>
+                                        <span>Khác</span>
+                                        <ul class="navbar__main-list">
+                                            <li onclick="displayNavbarMenu(this)" id="removeNavbar">
+                                                <a ondblclick="navbarclick(this)" href="#" id="alink"><ion-icon name="call-outline"></ion-icon> Liên hệ <ion-icon name="chevron-down-outline" id="vdown"></ion-icon></a>
+                                                <ul class="navbar-submenu">
+                                                    <li><a href="#" id="navbar-links">Số điện thoại</a></li>
+                                                    <li><a href="#" id="navbar-links">Mạng xã hội</a></li>
+                                                </ul>
+                                            </li>
+                                            <li onclick="displayNavbarMenu(this)" id="removeNavbar"><a ondblclick="navbarclick(this)" id="alink" href="#"><ion-icon name="settings-outline"></ion-icon> Cài đặt</a></li>
+                                            <li onclick="displayNavbarMenu(this)" id="removeNavbar"><a ondblclick="navbarclick(this)" id="alink" href="#"><ion-icon name="log-out-outline"></ion-icon> Đăng xuất</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="navbar__menu-admin">
+                                        <div class="menu__admin-avt">
+                                            <img src="https://s3-ap-southeast-1.amazonaws.com/images.spiderum.com/sp-images/b0c4ce5053c611eb8898d93a52f37b5c.jpg" alt="">
+                                        </div>
+                                        <div class="menu__admin-main">
+                                            <a href="#">Front-end</a>
+                                            <p>dinhcancoder@fpt.edu.vn</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu_dark-light">
+                                        <div class="drak-light_box" onclick="darklight()"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-menu">
             <div class="container">
-                <div class="mid">
-                    <div class="mid__logo flex-align">
-                        <ion-icon name="ice-cream-outline"></ion-icon>
-                        <a>Web<span>Stor</span></a>
-                    </div>
-                    <div class="mid__search flex-center">
-                        <div class="mid__search-main">
-                            <input type="search" placeholder="Nhập nội dung ...">
-                            <div class="icons-search flex-center">
-                                <ion-icon name="search-outline"></ion-icon>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mid__right flex-align">
-                        <div class="mid__right-tym flex-center">
-                            <ion-icon name="heart-outline"></ion-icon>
-                        </div>
-                        <div class="mid__right-cart flex-center">
-                            <ion-icon name="cart-outline"></ion-icon>
-                            <!-- <div class="display-cart">
-                                <span>Chưa có sản phẩm nào</span>
-                                <a href="#">Mua ngay</a>
-                            </div> -->
-                        </div>
-                        <div class="mid__right-menubox">
-                            <div class="mid__right-menu flex-center" onclick="nbmenu()">
-                                <ion-icon name="menu-outline"></ion-icon>
-                            </div>
-                            <div class="navbar__menu">
-                                <div class="navbar__menu-logo">
-                                    <a href="#" class="flex-align">
-                                        <ion-icon name="ice-cream-outline"></ion-icon>
-                                        <span>WebStor</span>
-                                    </a>
-                                    <ion-icon name="close-outline" onclick="nbmenu()" style="cursor: pointer;"></ion-icon>
-                                </div>
-                                <div class="navbar__menu-main">
-                                    <span>Danh mục</span>
-                                    <ul class="navbar__main-list">
-                                        <li onclick="displayNavbarMenu(this)" id="removeNavbar"><a ondblclick="navbarclick(this)" id="alink" href="#"><ion-icon name="home-outline"></ion-icon> Trang chủ</a></li>
-                                        <li onclick="displayNavbarMenu(this)" id="removeNavbar"><a ondblclick="navbarclick(this)" id="alink" href="#" class="navbar-actice"><ion-icon name="layers-outline"></ion-icon> Menu </a></li>
-                                        <li onclick="displayNavbarMenu(this)" id="removeNavbar">
-                                            <a ondblclick="navbarclick(this)" id="alink" href="#"><ion-icon name="fast-food-outline"></ion-icon> Đồ ăn <ion-icon name="chevron-down-outline" id="vdown"></ion-icon></a>
-                                            <ul class="navbar-submenu">
-                                                <li><a href="#" id="navbar-links">Ăn sáng</a></li>
-                                                <li><a href="#" id="navbar-links">Ăn trưa</a></li>
-                                                <li><a href="#" id="navbar-links">Ăn tối</a></li>
-                                            </ul>
-                                        </li>
-                                        <li onclick="displayNavbarMenu(this)" id="removeNavbar">
-                                            <a ondblclick="navbarclick(this)" href="#" id="alink"><ion-icon name="beer-outline"></ion-icon> Đồ uống <ion-icon name="chevron-down-outline" id="vdown"></ion-icon></a>
-                                            <ul class="navbar-submenu">
-                                                <li><a href="#" id="navbar-links">Trà sữa</a></li>
-                                                <li><a href="#" id="navbar-links">Trà chanh</a></li>
-                                                <li><a href="#" id="navbar-links">Trà đào</a></li>
-                                                <li><a href="#" id="navbar-links">Soda</a></li>
-                                            </ul>
-                                        </li>
-                                        <li onclick="displayNavbarMenu(this)" id="removeNavbar"><a ondblclick="navbarclick(this)" id="alink" href="#"><ion-icon name="bookmarks-outline"></ion-icon> Khác</a></li>
-                                    </ul>
-                                    <span>Người dùng</span>
-                                    <ul class="navbar__main-list">
-                                        <li onclick="displayNavbarMenu(this)" id="removeNavbar"><a ondblclick="navbarclick(this)" id="alink" href="#"><ion-icon name="person-circle-outline"></ion-icon> Tài khoản</a></li>
-                                        <li onclick="displayNavbarMenu(this)" id="removeNavbar"><a ondblclick="navbarclick(this)" id="alink" href="#"><ion-icon name="heart-outline"></ion-icon> Yêu thích</a></li>
-                                        <li onclick="displayNavbarMenu(this)" id="removeNavbar"><a ondblclick="navbarclick(this)" id="alink" href="#"><ion-icon name="cart-outline"></ion-icon> Giỏ hàng</a></li>
-                                    </ul>
-                                    <span>Khác</span>
-                                    <ul class="navbar__main-list">
-                                        <li onclick="displayNavbarMenu(this)" id="removeNavbar">
-                                            <a ondblclick="navbarclick(this)" href="#" id="alink"><ion-icon name="call-outline"></ion-icon> Liên hệ <ion-icon name="chevron-down-outline" id="vdown"></ion-icon></a>
-                                            <ul class="navbar-submenu">
-                                                <li><a href="#" id="navbar-links">Số điện thoại</a></li>
-                                                <li><a href="#" id="navbar-links">Mạng xã hội</a></li>
-                                            </ul>
-                                        </li>
-                                        <li onclick="displayNavbarMenu(this)" id="removeNavbar"><a ondblclick="navbarclick(this)" id="alink" href="#"><ion-icon name="settings-outline"></ion-icon> Cài đặt</a></li>
-                                        <li onclick="displayNavbarMenu(this)" id="removeNavbar"><a ondblclick="navbarclick(this)" id="alink" href="#"><ion-icon name="log-out-outline"></ion-icon> Đăng xuất</a></li>
-                                    </ul>
-                                </div>
-                                <div class="navbar__menu-admin">
-                                    <div class="menu__admin-avt">
-                                        <img src="https://s3-ap-southeast-1.amazonaws.com/images.spiderum.com/sp-images/b0c4ce5053c611eb8898d93a52f37b5c.jpg" alt="">
+                <div class="menu">
+                    <ul class="menu__list flex-center">
+                        <li class="menu__items">
+                            <a href="#" class="menu__links"> <ion-icon name="home-outline"></ion-icon>Trang chủ</a>
+                        </li>
+                        <li class="menu__items">
+                            <a href="#" class="menu__links"><ion-icon name="grid-outline"></ion-icon> Danh mục</a>
+                            <ul class="submenu">
+                                <div class="submenu__main">
+                                    <div class="submenu__main-box">
+                                        <span>Trà sữa</span>
+                                        <div class="submenu__main-list">
+                                            <li class="submenu__main-items">
+                                                <a href="#" class="submenu__main-link">Trà sữa truyền thống</a>
+                                            </li>
+                                            <li class="submenu__main-items">
+                                                <a href="#" class="submenu__main-link">Trà sữa thái xanh</a>
+                                            </li>
+                                            <li class="submenu__main-items">
+                                                <a href="#" class="submenu__main-link">Trà sữa matcha</a>
+                                            </li>
+                                            <li class="submenu__main-items">
+                                                <a href="#" class="submenu__main-link"> Trà sữa socola</a>
+                                            </li>
+                                            <li class="submenu__main-items">
+                                                <a href="#" class="submenu__main-link">Trà sữa trân châu</a>
+                                            </li>
+                                            <li class="submenu__main-items">
+                                                <a href="#" class="submenu__main-link">Trà sữa đặc biệt</a>
+                                            </li>
+                                        </div>
                                     </div>
-                                    <div class="menu__admin-main">
-                                        <a href="#">Front-end</a>
-                                        <p>dinhcancoder@fpt.edu.vn</p>
+                                    <div class="submenu__main-box">
+                                        <span>Mì cay</span>
+                                        <div class="submenu__main-list">
+                                            <li class="submenu__main-items">
+                                                <a href="#" class="submenu__main-link">Mì cay 7 cấp độ</a>
+                                            </li>
+                                            <li class="submenu__main-items">
+                                                <a href="#" class="submenu__main-link">Mì cay hải sản</a>
+                                            </li>
+                                            <li class="submenu__main-items">
+                                                <a href="#" class="submenu__main-link">Mì cay kim chi</a>
+                                            </li>
+                                            <li class="submenu__main-items">
+                                                <a href="#" class="submenu__main-link"> Mì cay xúc xích</a>
+                                            </li>
+                                            <li class="submenu__main-items">
+                                                <a href="#" class="submenu__main-link">Mì cay đùi gà</a>
+                                            </li>
+                                            <li class="submenu__main-items">
+                                                <a href="#" class="submenu__main-link">Mì cay đặc biệt</a>
+                                            </li>
+                                        </div>
+                                    </div>
+                                    <div class="submenu__main-box">
+                                        <span>Ăn vặt</span>
+                                        <div class="submenu__main-list">
+                                            <li class="submenu__main-items">
+                                                <a href="#" class="submenu__main-link">Bánh tráng trộn</a>
+                                            </li>
+                                            <li class="submenu__main-items">
+                                                <a href="#" class="submenu__main-link">Cá viên chiên</a>
+                                            </li>
+                                            <li class="submenu__main-items">
+                                                <a href="#" class="submenu__main-link">Xúc xíc</a>
+                                            </li>
+                                            <li class="submenu__main-items">
+                                                <a href="#" class="submenu__main-link">Phô mai que</a>
+                                            </li>
+                                            <li class="submenu__main-items">
+                                                <a href="#" class="submenu__main-link">Xoài lắc</a>
+                                            </li>
+                                            <li class="submenu__main-items">
+                                                <a href="#" class="submenu__main-link">Bánh tráng nướng</a>
+                                            </li>
+                                        </div>
+                                    </div>
+                                    <div class="submenu__main-box">
+                                        <span>Khác</span>
+                                        <div class="submenu__main-list">
+                                            <li class="submenu__main-items">
+                                                <a href="#" class="submenu__main-link">Ốc hút</a>
+                                            </li>
+                                            <li class="submenu__main-items">
+                                                <a href="#" class="submenu__main-link">Trứng gà nướng</a>
+                                            </li>
+                                            <li class="submenu__main-items">
+                                                <a href="#" class="submenu__main-link">Bánh kẹp</a>
+                                            </li>
+                                            <li class="submenu__main-items">
+                                                <a href="#" class="submenu__main-link">Bánh cuốn</a>
+                                            </li>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="menu_dark-light">
-                                    <div class="drak-light_box" onclick="darklight()"></div>
-                                </div>
-                            </div>
+                            </ul>
+                        </li>
+                        <li class="menu__items">
+                            <a href="#" class="menu__links"><ion-icon name="fast-food-outline"></ion-icon> Đồ ăn</a>
+                        </li>
+                        <li class="menu__items">
+                            <a href="#" class="menu__links"><ion-icon name="beer-outline"></ion-icon> Đồ uống</a>
+                        </li>
+                        <li class="menu__items">
+                            <a href="#" class="menu__links"><ion-icon name="chatbubbles-outline"></ion-icon> Liên hệ</a>
+                            <ul class="submenu-contact">
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">Zalo</a></li>
+                                <li><a href="#">Google</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="bn">
+            <div class="container">
+                <div class="banner">
+                    <div class="banner__left">
+                        <h2>Online store selling <span class="primary">Food & Drinks</span></h2>
+                        <p>Enjoy delicious food and cool drinks available only at the online store.</p>
+                        <div class="banner__left-btn">
+                            <button href="#"><span>Explore Now</span> <ion-icon name="arrow-forward-outline"></ion-icon></button>
+                            <a href="$">
+                                <ion-icon name="copy-outline"></ion-icon>
+                                <span>See Webstore</span>
+                            </a>
                         </div>
+                    </div>
+                    <div class="banner__right">
+                        <img src="./assets/img/banner.png">
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="header-menu">
-        <div class="container">
-            <div class="menu">
-                <ul class="menu__list flex-center">
-                    <li class="menu__items">
-                        <a href="#" class="menu__links"> <ion-icon name="home-outline"></ion-icon>Trang chủ</a>
-                    </li>
-                    <li class="menu__items">
-                        <a href="#" class="menu__links"><ion-icon name="grid-outline"></ion-icon> Danh mục</a>
-                        <ul class="submenu">
-                            <div class="submenu__main">
-                                <div class="submenu__main-box">
-                                    <span>Trà sữa</span>
-                                    <div class="submenu__main-list">
-                                        <li class="submenu__main-items">
-                                            <a href="#" class="submenu__main-link">Trà sữa truyền thống</a>
-                                        </li>
-                                        <li class="submenu__main-items">
-                                            <a href="#" class="submenu__main-link">Trà sữa thái xanh</a>
-                                        </li>
-                                        <li class="submenu__main-items">
-                                            <a href="#" class="submenu__main-link">Trà sữa matcha</a>
-                                        </li>
-                                        <li class="submenu__main-items">
-                                            <a href="#" class="submenu__main-link"> Trà sữa socola</a>
-                                        </li>
-                                        <li class="submenu__main-items">
-                                            <a href="#" class="submenu__main-link">Trà sữa trân châu</a>
-                                        </li>
-                                        <li class="submenu__main-items">
-                                            <a href="#" class="submenu__main-link">Trà sữa đặc biệt</a>
-                                        </li>
-                                    </div>
-                                </div>
-                                <div class="submenu__main-box">
-                                    <span>Mì cay</span>
-                                    <div class="submenu__main-list">
-                                        <li class="submenu__main-items">
-                                            <a href="#" class="submenu__main-link">Mì cay 7 cấp độ</a>
-                                        </li>
-                                        <li class="submenu__main-items">
-                                            <a href="#" class="submenu__main-link">Mì cay hải sản</a>
-                                        </li>
-                                        <li class="submenu__main-items">
-                                            <a href="#" class="submenu__main-link">Mì cay kim chi</a>
-                                        </li>
-                                        <li class="submenu__main-items">
-                                            <a href="#" class="submenu__main-link"> Mì cay xúc xích</a>
-                                        </li>
-                                        <li class="submenu__main-items">
-                                            <a href="#" class="submenu__main-link">Mì cay đùi gà</a>
-                                        </li>
-                                        <li class="submenu__main-items">
-                                            <a href="#" class="submenu__main-link">Mì cay đặc biệt</a>
-                                        </li>
-                                    </div>
-                                </div>
-                                <div class="submenu__main-box">
-                                    <span>Ăn vặt</span>
-                                    <div class="submenu__main-list">
-                                        <li class="submenu__main-items">
-                                            <a href="#" class="submenu__main-link">Bánh tráng trộn</a>
-                                        </li>
-                                        <li class="submenu__main-items">
-                                            <a href="#" class="submenu__main-link">Cá viên chiên</a>
-                                        </li>
-                                        <li class="submenu__main-items">
-                                            <a href="#" class="submenu__main-link">Xúc xíc</a>
-                                        </li>
-                                        <li class="submenu__main-items">
-                                            <a href="#" class="submenu__main-link">Phô mai que</a>
-                                        </li>
-                                        <li class="submenu__main-items">
-                                            <a href="#" class="submenu__main-link">Xoài lắc</a>
-                                        </li>
-                                        <li class="submenu__main-items">
-                                            <a href="#" class="submenu__main-link">Bánh tráng nướng</a>
-                                        </li>
-                                    </div>
-                                </div>
-                                <div class="submenu__main-box">
-                                    <span>Khác</span>
-                                    <div class="submenu__main-list">
-                                        <li class="submenu__main-items">
-                                            <a href="#" class="submenu__main-link">Ốc hút</a>
-                                        </li>
-                                        <li class="submenu__main-items">
-                                            <a href="#" class="submenu__main-link">Trứng gà nướng</a>
-                                        </li>
-                                        <li class="submenu__main-items">
-                                            <a href="#" class="submenu__main-link">Bánh kẹp</a>
-                                        </li>
-                                        <li class="submenu__main-items">
-                                            <a href="#" class="submenu__main-link">Bánh cuốn</a>
-                                        </li>
-                                    </div>
-                                </div>
-                            </div>
+        <div class="setting">
+            <ion-icon name="color-palette-outline" onclick="displayColor()"></ion-icon>
+            <div class="setting__main">
+                <div class="setting__color orange" onclick="color('orange', this)"></div>
+                <div class="setting__color yellow" onclick="color('yellow', this)"></div>
+                <div class="setting__color violet" onclick="color('violet', this)"></div>
+                <div class="setting__color blue" onclick="color('blue', this)"></div>
+                <div class="setting__color pink" onclick="color('pink', this)"></div>
+                <div class="setting__color red" onclick="color('red', this)"></div>
+                <div class="setting__color green" onclick="color('green', this)"></div>
+                <ion-icon name="refresh-outline" class="resetColor" onclick="resetColor()"></ion-icon>
+            </div>
+        </div>
+
+        <div class="content-category">
+            <div class="container">
+                <div class="category">
+                    <div class="category__header">
+                        <span class="category__header-title flex-align">
+                            Thịnh hành <ion-icon name="layers-outline"></ion-icon>
+                        </span>
+                        <p class="category__header-text">
+                            Tổng hợp tất cả các danh mục được nhiều người mua và yêu thích nhất trên cửa hàng trực tuyến webstore.
+                        </p>
+                    </div>
+
+                    <div class="category__filter">
+                        <ul>
+                            <li><a id="filter-actice" onclick="filter('all', this)">All</a></li>
+                            <li><a onclick="filter('trasua', this)">Trà sữa</a></li>
+                            <li><a onclick="filter('micay', this)">Mì cay</a></li>
+                            <li><a onclick="filter('anvat', this)">Ăn vặt</a></li>
+                            <li><a onclick="filter('khac', this)">Khác</a></li>
                         </ul>
-                    </li>
-                    <li class="menu__items">
-                        <a href="#" class="menu__links"><ion-icon name="fast-food-outline"></ion-icon> Đồ ăn</a>
-                    </li>
-                    <li class="menu__items">
-                        <a href="#" class="menu__links"><ion-icon name="beer-outline"></ion-icon> Đồ uống</a>
-                    </li>
-                    <li class="menu__items">
-                        <a href="#" class="menu__links"><ion-icon name="chatbubbles-outline"></ion-icon> Liên hệ</a>
-                        <ul class="submenu-contact">
-                            <li><a href="#">Facebook</a></li>
-                            <li><a href="#">Zalo</a></li>
-                            <li><a href="#">Google</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="bn">
-        <div class="container">
-            <div class="banner">
-                <div class="banner__left">
-                    <h2>Online store selling <span class="primary">Food & Drinks</span></h2>
-                    <p>Enjoy delicious food and cool drinks available only at the online store.</p>
-                    <div class="banner__left-btn">
-                        <button href="#"><span>Explore Now</span> <ion-icon name="arrow-forward-outline"></ion-icon></button>
-                        <a href="$">
-                            <ion-icon name="copy-outline"></ion-icon>
-                            <span>See Webstore</span>
-                        </a>
                     </div>
-                </div>
-                <div class="banner__right">
-                    <img src="./assets/img/banner.png">
+
+                    <div class="category__box">
+                        
+                        <div class="all">
+                            <div class="product">
+                                <div class="product__items">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="trasua"></div>
+                        <div class="micay"></div>
+                        <div class="anvat"></div>
+                        <div class="khac"></div>
+                        
+                    </div>
+                    
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="setting">
-        <ion-icon name="color-palette-outline" onclick="displayColor()"></ion-icon>
-        <div class="setting__main">
-            <div class="setting__color orange" onclick="color('orange', this)"></div>
-            <div class="setting__color yellow" onclick="color('yellow', this)"></div>
-            <div class="setting__color violet" onclick="color('violet', this)"></div>
-            <div class="setting__color blue" onclick="color('blue', this)"></div>
-            <div class="setting__color pink" onclick="color('pink', this)"></div>
-            <div class="setting__color red" onclick="color('red', this)"></div>
-            <div class="setting__color green" onclick="color('green', this)"></div>
-            <ion-icon name="refresh-outline" class="resetColor" onclick="resetColor()"></ion-icon>
-        </div>
-    </div>
-
-    <div class="content-category">
-        <div class="container">
-            <div class="category">
-                <div class="category__header">
-                    <span class="category__header-title flex-align">
-                        Thịnh hành <ion-icon name="layers-outline"></ion-icon>
-                    </span>
-                    <p class="category__header-text">
-                        Tổng hợp tất cả các danh mục được nhiều người mua và yêu thích nhất trên cửa hàng trực tuyến webstore.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
     </div>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
